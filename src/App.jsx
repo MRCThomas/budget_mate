@@ -2,6 +2,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Template from './components/Template'
 import Dashboard from './pages/Dashboard/Dashboard'
 import BudgetForm from './pages/BudgetForm/BudgetForm'
+import SidebarMenu from "./SidebarMenu.jsx";
 
 const router = createBrowserRouter([
   {
@@ -15,6 +16,10 @@ const router = createBrowserRouter([
       {
         path: 'budget/:id',
         element: <BudgetForm />
+      },
+      {
+        path: '/sidebardev',
+        element: <SidebarMenu />
       }
     ]
   }
