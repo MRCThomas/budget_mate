@@ -1,7 +1,10 @@
 import React from 'react'
+import Chart from '../../components/Chart'
 
 export default function Dashboard() {
   return (
-    <div>Dashboard</div>
+    <div>
+      <Chart />
+    </div>
   )
 }

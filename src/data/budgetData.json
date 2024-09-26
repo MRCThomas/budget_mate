@@ -1,20 +1,30 @@
 {
-    "budget": 12000,
     "expenses": [
-        {
-            "id": 1,
-            "description": "Shopping",
-            "amount": 200
-        },
-        {
-            "id": 2,
-            "description": "Rent",
-            "amount": 1000
-        },
-        {
-            "id": 3,
-            "description": "Utilities",
-            "amount": 300
-        }
+      {
+        "id": 1,
+        "category": "Alimentation",
+        "amount": 450
+      },
+      {
+        "id": 2,
+        "category": "Transport",
+        "amount": 120
+      },
+      {
+        "id": 3,
+        "category": "Logement",
+        "amount": 800
+      },
+      {
+        "id": 4,
+        "category": "Divertissement",
+        "amount": 200
+      },
+      {
+        "id": 5,
+        "category": "Santé",
+        "amount": 100
+      }
     ]
-}
+  }
+  
