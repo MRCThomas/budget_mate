@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import './AddExpense.css'
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 export default function Dashboard() {
 
