@@ -44,7 +44,7 @@ app.post('/add-expense', (req, res) => {
 
     const expenseWithId = {
       id: newId,
-      description: newExpense.description,
+      category: newExpense.category,
       amount: newExpense.amount
     };
 

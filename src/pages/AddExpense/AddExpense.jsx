@@ -4,7 +4,7 @@ import './AddExpense.css'
 export default function Dashboard() {
 
   const [formData, setFormData] = useState({
-    description: '',
+    category: '',
     amount: ''
   });
 
@@ -50,14 +50,14 @@ export default function Dashboard() {
         <form onSubmit={handleSubmit} action="/action_page.php" method='post' class="was-validated container w-50 border rounded px-3 pt-3 pb-3">
             <h1>Ajouter une dépense</h1>
             <div>
-                <label for="description" class="form-label">Titre</label>
+                <label for="category" class="form-label">Titre</label>
                 <input
                   type="text"
                   class="form-control"
-                  id="description"
+                  id="category"
                   placeholder="Saissez un titre..."
-                  name="description"
-                  value={formData.description}
+                  name="category"
+                  value={formData.category}
                   onChange={handleChange}
                   required />
                 <div class="valid-feedback">Valide.</div>
