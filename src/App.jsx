@@ -3,6 +3,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Template from './components/Template'
 import Dashboard from './pages/Dashboard/Dashboard'
 import BudgetForm from './pages/BudgetForm/BudgetForm'
+import AddExpense from './pages/AddExpense/AddExpense'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { AuthProvider } from './components/Auth/AuthProvider';
 import PrivateRoute from './components/Auth/PrivateRoute';
@@ -38,6 +39,14 @@ const router = createBrowserRouter([
           </PrivateRoute>
         ),
       },
+      {
+        path: 'add-expense',
+        element: (
+          <PrivateRoute>
+            <AddExpense/>
+          </PrivateRoute>
+        ),
+      }
     ],
   },
 ]);
