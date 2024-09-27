@@ -53,8 +53,13 @@ export default function Chart({ expenses }) {
     };
 
     return (
-        <div>
-            <Doughnut data={chartData} options={options} />
+        <div className='container'>
+            <div className='row justify-content-center'>
+                <div className='col-md-6 col-lg-4'>
+                    {/* Doughnut Chart */}
+                    <Doughnut data={chartData} options={options} />
+                </div>
+            </div>
         </div>
     );
 }

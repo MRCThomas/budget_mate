@@ -12,13 +12,10 @@ const Sidebar = () => {
                 <hr/>
                 <ul className="nav nav-pills flex-column mb-auto">
                     <li className="nav-item mb-2">
-                        <Link to="/" className="nav-link custom-a active" aria-current="page">Accueil</Link>
+                        <Link to="/" className="nav-link custom-a text-white" aria-current="page">Accueil</Link>
                     </li>
                     <li className="mb-2">
                         <Link to="add-expense" className="nav-link custom-a text-white">Ajouter une dépense</Link>
-                    </li>
-                    <li className="mb-2">
-                        <Link to="profil" className="nav-link custom-a text-white">Profil</Link>
                     </li>
                 </ul>
             </div>

@@ -30,10 +30,6 @@ export default function Dashboard() {
         body: JSON.stringify(formData),
       });
       
-      console.log('====================================');
-      console.log(response);
-      console.log('====================================');
-      
       if (response.ok) {
         alert('Dépense ajoutée avec succès !');
       } else {
