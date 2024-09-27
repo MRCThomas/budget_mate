@@ -42,10 +42,21 @@ app.post('/add-expense', (req, res) => {
       ? budgetData.expenses[budgetData.expenses.length - 1].id + 1 
       : 1; // Assure que l'ID commence à 1 si la liste est vide
 
+    function getRandomColor() {
+      const r = Math.floor(Math.random() * 256);
+      const g = Math.floor(Math.random() * 256);
+      const b = Math.floor(Math.random() * 256);
+      return `rgba(${r}, ${g}, ${b}, 0.6)`;
+    }
+
+    let newDate = new Date()
+
     const expenseWithId = {
       id: newId,
-      description: newExpense.description,
-      amount: newExpense.amount
+      category: newExpense.category,
+      amount: newExpense.amount,
+      color: getRandomColor(),
+      date: `${newDate.getFullYear()}-${newDate.getMonth()}-${newDate.getDay()}`
     };
 
     budgetData.expenses.push(expenseWithId); // Ajouter la nouvelle dépense à la liste

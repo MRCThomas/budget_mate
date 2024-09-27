@@ -1,10 +1,11 @@
 import React, { useState } from 'react'
 import './AddExpense.css'
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 export default function Dashboard() {
 
   const [formData, setFormData] = useState({
-    description: '',
+    category: '',
     amount: ''
   });
 
@@ -46,18 +47,17 @@ export default function Dashboard() {
 
   return (
     <div class="container container-fluid d-flex align-items-center full-height">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"></link>
         <form onSubmit={handleSubmit} action="/action_page.php" method='post' class="was-validated container w-50 border rounded px-3 pt-3 pb-3">
             <h1>Ajouter une dépense</h1>
             <div>
-                <label for="description" class="form-label">Titre</label>
+                <label for="category" class="form-label">Titre</label>
                 <input
                   type="text"
                   class="form-control"
-                  id="description"
+                  id="category"
                   placeholder="Saissez un titre..."
-                  name="description"
-                  value={formData.description}
+                  name="category"
+                  value={formData.category}
                   onChange={handleChange}
                   required />
                 <div class="valid-feedback">Valide.</div>
