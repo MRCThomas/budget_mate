@@ -15,11 +15,6 @@
       "id": 3,
       "description": "Utilities",
       "amount": 300
-    },
-    {
-      "id": 4,
-      "description": "Lorem",
-      "amount": "23"
     }
   ]
 }
