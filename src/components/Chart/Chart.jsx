@@ -1,20 +1,29 @@
 import React, { useEffect, useState } from 'react';
 import { Doughnut } from 'react-chartjs-2';
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
-import budgetData from '../../data/budgetData.json'; // Importation du fichier JSON
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 
-export default function Chart() {
+export default function Chart({ expenses }) {
     const [chartData, setChartData] = useState({
         labels: [],
-        datasets: []
+        datasets: [],
     });
 
     useEffect(() => {
-        if (budgetData.expenses) {
-            const labels = budgetData.expenses.map(item => item.category);
-            const dataValues = budgetData.expenses.map(item => item.amount);
+        if (expenses) {
+            const labels = expenses.map(item => item.category);
+            const dataValues = expenses.map(item => item.amount);
+
+            const categoryColors = {};
+            expenses.forEach(expense => {
+                if (!categoryColors[expense.category]) {
+                    categoryColors[expense.category] = expense.color;
+                }
+            });
+
+            const backgroundColors = Object.values(categoryColors);
+            const borderColors = backgroundColors.map(color => color.replace('0.6', '1'));
 
             setChartData({
                 labels: labels,
@@ -22,26 +31,14 @@ export default function Chart() {
                     {
                         label: 'Budget',
                         data: dataValues,
-                        backgroundColor: [
-                            'rgba(255, 99, 132, 0.6)',
-                            'rgba(54, 162, 235, 0.6)',
-                            'rgba(255, 206, 86, 0.6)',
-                            'rgba(75, 192, 192, 0.6)',
-                            'rgba(153, 102, 255, 0.6)',
-                        ],
-                        borderColor: [
-                            'rgba(255, 99, 132, 1)',
-                            'rgba(54, 162, 235, 1)',
-                            'rgba(255, 206, 86, 1)',
-                            'rgba(75, 192, 192, 1)',
-                            'rgba(153, 102, 255, 1)',
-                        ],
+                        backgroundColor: backgroundColors,
+                        borderColor: borderColors,
                         borderWidth: 1,
                     },
                 ],
             });
         }
-    }, []);
+    }, [expenses]);
 
     const options = {
         responsive: true,
@@ -57,7 +54,6 @@ export default function Chart() {
 
     return (
         <div>
-            <h2>Doughnut Chart Example</h2>
             <Doughnut data={chartData} options={options} />
         </div>
     );

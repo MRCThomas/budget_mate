@@ -2,6 +2,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Template from './components/Template'
 import Dashboard from './pages/Dashboard/Dashboard'
 import BudgetForm from './pages/BudgetForm/BudgetForm'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const router = createBrowserRouter([
   {

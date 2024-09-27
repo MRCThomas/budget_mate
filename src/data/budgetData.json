@@ -1,30 +1,270 @@
 {
-    "expenses": [
-      {
-        "id": 1,
-        "category": "Alimentation",
-        "amount": 450
-      },
-      {
-        "id": 2,
-        "category": "Transport",
-        "amount": 120
-      },
-      {
-        "id": 3,
-        "category": "Logement",
-        "amount": 800
-      },
-      {
-        "id": 4,
-        "category": "Divertissement",
-        "amount": 200
-      },
-      {
-        "id": 5,
-        "category": "Santé",
-        "amount": 100
-      }
-    ]
-  }
-  
+  "expenses": [
+    {
+      "id": 1,
+      "category": "Alimentation",
+      "amount": 450,
+      "color": "rgba(255, 99, 132, 0.6)",
+      "date": "2024-01-10"
+    },
+    {
+      "id": 2,
+      "category": "Transport",
+      "amount": 120,
+      "color": "rgba(54, 162, 235, 0.6)",
+      "date": "2024-01-15"
+    },
+    {
+      "id": 3,
+      "category": "Santé",
+      "amount": 300,
+      "color": "rgba(153, 102, 255, 0.6)",
+      "date": "2024-01-20"
+    },
+    {
+      "id": 4,
+      "category": "Alimentation",
+      "amount": 200,
+      "color": "rgba(255, 99, 132, 0.6)",
+      "date": "2024-02-05"
+    },
+    {
+      "id": 5,
+      "category": "Divertissement",
+      "amount": 150,
+      "color": "rgba(255, 206, 86, 0.6)",
+      "date": "2024-02-12"
+    },
+    {
+      "id": 6,
+      "category": "Transport",
+      "amount": 100,
+      "color": "rgba(54, 162, 235, 0.6)",
+      "date": "2024-02-18"
+    },
+    {
+      "id": 7,
+      "category": "Alimentation",
+      "amount": 500,
+      "color": "rgba(255, 99, 132, 0.6)",
+      "date": "2024-03-03"
+    },
+    {
+      "id": 8,
+      "category": "Transport",
+      "amount": 120,
+      "color": "rgba(54, 162, 235, 0.6)",
+      "date": "2024-03-05"
+    },
+    {
+      "id": 9,
+      "category": "Logement",
+      "amount": 800,
+      "color": "rgba(75, 192, 192, 0.6)",
+      "date": "2024-03-10"
+    },
+    {
+      "id": 10,
+      "category": "Divertissement",
+      "amount": 200,
+      "color": "rgba(255, 206, 86, 0.6)",
+      "date": "2024-03-20"
+    },
+    {
+      "id": 11,
+      "category": "Jeux",
+      "amount": 300,
+      "color": "rgba(255, 159, 64, 0.6)",
+      "date": "2024-03-25"
+    },
+    {
+      "id": 12,
+      "category": "Santé",
+      "amount": 250,
+      "color": "rgba(153, 102, 255, 0.6)",
+      "date": "2024-04-02"
+    },
+    {
+      "id": 13,
+      "category": "Transport",
+      "amount": 150,
+      "color": "rgba(54, 162, 235, 0.6)",
+      "date": "2024-04-10"
+    },
+    {
+      "id": 14,
+      "category": "Divertissement",
+      "amount": 100,
+      "color": "rgba(255, 206, 86, 0.6)",
+      "date": "2024-04-15"
+    },
+    {
+      "id": 15,
+      "category": "Alimentation",
+      "amount": 450,
+      "color": "rgba(255, 99, 132, 0.6)",
+      "date": "2024-05-05"
+    },
+    {
+      "id": 16,
+      "category": "Logement",
+      "amount": 500,
+      "color": "rgba(75, 192, 192, 0.6)",
+      "date": "2024-05-12"
+    },
+    {
+      "id": 17,
+      "category": "Jeux",
+      "amount": 350,
+      "color": "rgba(255, 159, 64, 0.6)",
+      "date": "2024-05-20"
+    },
+    {
+      "id": 18,
+      "category": "Santé",
+      "amount": 200,
+      "color": "rgba(153, 102, 255, 0.6)",
+      "date": "2024-06-01"
+    },
+    {
+      "id": 19,
+      "category": "Transport",
+      "amount": 300,
+      "color": "rgba(54, 162, 235, 0.6)",
+      "date": "2024-06-10"
+    },
+    {
+      "id": 20,
+      "category": "Alimentation",
+      "amount": 150,
+      "color": "rgba(255, 99, 132, 0.6)",
+      "date": "2024-06-20"
+    },
+    {
+      "id": 21,
+      "category": "Logement",
+      "amount": 800,
+      "color": "rgba(75, 192, 192, 0.6)",
+      "date": "2024-07-15"
+    },
+    {
+      "id": 22,
+      "category": "Divertissement",
+      "amount": 300,
+      "color": "rgba(255, 206, 86, 0.6)",
+      "date": "2024-07-25"
+    },
+    {
+      "id": 23,
+      "category": "Santé",
+      "amount": 100,
+      "color": "rgba(153, 102, 255, 0.6)",
+      "date": "2024-07-30"
+    },
+    {
+      "id": 24,
+      "category": "Alimentation",
+      "amount": 400,
+      "color": "rgba(255, 99, 132, 0.6)",
+      "date": "2024-08-10"
+    },
+    {
+      "id": 25,
+      "category": "Transport",
+      "amount": 150,
+      "color": "rgba(54, 162, 235, 0.6)",
+      "date": "2024-08-15"
+    },
+    {
+      "id": 26,
+      "category": "Jeux",
+      "amount": 200,
+      "color": "rgba(255, 159, 64, 0.6)",
+      "date": "2024-08-20"
+    },
+    {
+      "id": 27,
+      "category": "Santé",
+      "amount": 250,
+      "color": "rgba(153, 102, 255, 0.6)",
+      "date": "2024-09-05"
+    },
+    {
+      "id": 28,
+      "category": "Logement",
+      "amount": 600,
+      "color": "rgba(75, 192, 192, 0.6)",
+      "date": "2024-09-10"
+    },
+    {
+      "id": 29,
+      "category": "Transport",
+      "amount": 300,
+      "color": "rgba(54, 162, 235, 0.6)",
+      "date": "2024-09-20"
+    },
+    {
+      "id": 30,
+      "category": "Alimentation",
+      "amount": 500,
+      "color": "rgba(255, 99, 132, 0.6)",
+      "date": "2024-10-01"
+    },
+    {
+      "id": 31,
+      "category": "Divertissement",
+      "amount": 200,
+      "color": "rgba(255, 206, 86, 0.6)",
+      "date": "2024-10-15"
+    },
+    {
+      "id": 32,
+      "category": "Santé",
+      "amount": 150,
+      "color": "rgba(153, 102, 255, 0.6)",
+      "date": "2024-10-25"
+    },
+    {
+      "id": 33,
+      "category": "Transport",
+      "amount": 100,
+      "color": "rgba(54, 162, 235, 0.6)",
+      "date": "2024-11-05"
+    },
+    {
+      "id": 34,
+      "category": "Alimentation",
+      "amount": 400,
+      "color": "rgba(255, 99, 132, 0.6)",
+      "date": "2024-11-10"
+    },
+    {
+      "id": 35,
+      "category": "Logement",
+      "amount": 600,
+      "color": "rgba(75, 192, 192, 0.6)",
+      "date": "2024-11-15"
+    },
+    {
+      "id": 36,
+      "category": "Jeux",
+      "amount": 500,
+      "color": "rgba(255, 159, 64, 0.6)",
+      "date": "2024-12-01"
+    },
+    {
+      "id": 37,
+      "category": "Divertissement",
+      "amount": 300,
+      "color": "rgba(255, 206, 86, 0.6)",
+      "date": "2024-12-15"
+    },
+    {
+      "id": 38,
+      "category": "Santé",
+      "amount": 200,
+      "color": "rgba(153, 102, 255, 0.6)",
+      "date": "2024-12-20"
+    }
+  ]
+}
