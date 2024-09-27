@@ -1,10 +1,13 @@
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import Template from './components/Template';
-import Dashboard from './pages/Dashboard/Dashboard';
-import BudgetForm from './pages/BudgetForm/BudgetForm';
+
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import Template from './components/Template'
+import Dashboard from './pages/Dashboard/Dashboard'
+import BudgetForm from './pages/BudgetForm/BudgetForm'
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { AuthProvider } from './components/Auth/AuthProvider';
 import PrivateRoute from './components/Auth/PrivateRoute';
 import Login from './pages/Login';
+
 
 const router = createBrowserRouter([
   {
