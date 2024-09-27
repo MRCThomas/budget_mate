@@ -46,7 +46,6 @@ export default function Dashboard() {
 
   return (
     <div class="container container-fluid d-flex align-items-center full-height">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"></link>
         <form onSubmit={handleSubmit} action="/action_page.php" method='post' class="was-validated container w-50 border rounded px-3 pt-3 pb-3">
             <h1>Ajouter une dépense</h1>
             <div>

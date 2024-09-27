@@ -20,6 +20,24 @@
       "id": 4,
       "description": "Lorem",
       "amount": "1387"
+    },
+    {
+      "id": 5,
+      "amount": "12"
+    },
+    {
+      "id": 6,
+      "category": "regreg",
+      "amount": "2112",
+      "color": "rgba(220, 37, 163, 0.7)",
+      "date": "2024-09-27T13:41:35.648Z"
+    },
+    {
+      "id": 7,
+      "category": "oui",
+      "amount": "2837",
+      "color": "rgba(31, 178, 212, 0.6)",
+      "date": "2024-09-27T13:44:47.955Z"
     }
   ]
 }
