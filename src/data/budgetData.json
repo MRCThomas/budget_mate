@@ -1,20 +1,25 @@
 {
-    "budget": 12000,
-    "expenses": [
-        {
-            "id": 1,
-            "description": "Shopping",
-            "amount": 200
-        },
-        {
-            "id": 2,
-            "description": "Rent",
-            "amount": 1000
-        },
-        {
-            "id": 3,
-            "description": "Utilities",
-            "amount": 300
-        }
-    ]
+  "budget": 12000,
+  "expenses": [
+    {
+      "id": 1,
+      "description": "Shopping",
+      "amount": 200
+    },
+    {
+      "id": 2,
+      "description": "Rent",
+      "amount": 1000
+    },
+    {
+      "id": 3,
+      "description": "Utilities",
+      "amount": 300
+    },
+    {
+      "id": 4,
+      "description": "Lorem",
+      "amount": "23"
+    }
+  ]
 }

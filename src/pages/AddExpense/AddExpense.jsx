@@ -21,7 +21,7 @@ export default function Dashboard() {
 
     // Envoie des données au backend
     try {
-      const response = await fetch('http://localhost:5173/add-expense', {
+      const response = await fetch('http://localhost:5000/add-expense', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -29,14 +29,18 @@ export default function Dashboard() {
         body: JSON.stringify(formData),
       });
       
+      console.log('====================================');
+      console.log(response);
+      console.log('====================================');
+      
       if (response.ok) {
         alert('Dépense ajoutée avec succès !');
       } else {
-        alert('Erreur lors de l\'ajout de la dépense.');
+        alert('Erreur lors de l\'ajout de la dépense');
       }
     } catch (error) {
       console.error('Erreur de requête:', error);
-      alert('Erreur lors de l\'ajout de la dépense.');
+      alert('Erreur lors de l\'ajout de la dépense. 2');
     }
   };
 
