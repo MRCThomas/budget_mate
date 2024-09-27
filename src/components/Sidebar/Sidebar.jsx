@@ -1,10 +1,11 @@
 import React from 'react';
 import './Sidebar.css'
 import {Link} from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Sidebar = () => {
     return (
-        <div className="col-auto min-vh-100">
+        <div className="col-auto custom-sidebar">
             <div className="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style={{width: '280px', height: '100vh'}}>
                 <a href="/public" className="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
                     <Link to="/" className="fs-4 text-white custom-link-logo">BudgetMate</Link>

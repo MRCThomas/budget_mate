@@ -1,3 +1,9 @@
+.custom-sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
 .custom-a:hover {
     border-radius: 5px;
     border: 1px solid #FFF;
