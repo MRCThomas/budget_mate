@@ -12,11 +12,20 @@ const Login = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <input type='email' placeholder='Email' required />
-      <input type='password' placeholder='Mot de passe' required />
-      <button type='submit'>Se connecter</button>
-    </form>
+    <div className='vh-100 d-flex justify-content-center align-items-center'>
+      <form onSubmit={handleSubmit} className='d-flex flex-column'>
+        <input type='email' placeholder='Email' className='mb-4' required />
+        <input
+          type='password'
+          placeholder='Mot de passe'
+          className='mb-4'
+          required
+        />
+        <button type='submit' className='btn btn-primary'>
+          Se connecter
+        </button>
+      </form>
+    </div>
   );
 };
 
