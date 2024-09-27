@@ -15,7 +15,10 @@ export default function Template() {
           {/* Contenu Principal */}
           <div className='col'>
             <div className='p-4'>
-              <Header />
+              <div className='d-flex justify-content-between align-items-center'>
+                <Header />
+                <Logout />
+              </div>
               <Outlet />
               <Footer />
             </div>
